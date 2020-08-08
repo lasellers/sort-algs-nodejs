@@ -26,6 +26,22 @@ export class SortData {
         return [-1, 1, 3, 4, 7, 100];
     }
 
+    getSortDataInt10 = (): Array<number> => {
+        return [7, 1, 100, 2, 3, 4, 14, 13, 12, 11];
+    };
+
+    getSortDataInt10Sorted = (): Array<number> => {
+        return [1, 2, 3, 4, 7, 11, 12, 13, 14, 100];
+    }
+
+    getSortDataIntS = (): Array<number> => {
+        return [-3, -10, 1, 0];
+    };
+
+    getSortDataIntSSorted = (): Array<number> => {
+        return [-10, -3, 0, 1];
+    }
+
     getSortDataIntBigData = (): Array<number> => {
         const MAX = 200;
         let arr = [];
@@ -36,4 +52,5 @@ export class SortData {
     };
 
 }
+
 // module.exports.SortData = SortData;

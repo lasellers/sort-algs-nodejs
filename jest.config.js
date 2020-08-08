@@ -6,8 +6,10 @@ const chai = require('chai');
 // @ts-ignore
 var expect = require('chai').expect;
 chai.use(require('chai-arrays'));
+//import { AssertionError } from chai;
 //import { expect } from "chai";
 //const expect = require('chai').default;
+//import {AssertionError} from 'assertion-error';
 
 module.exports = {
     "testPathIgnorePatterns": ["cypress"],
