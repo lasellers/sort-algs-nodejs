@@ -1,5 +1,7 @@
 # Sort Algs Node Js
 
+Port of SortAlgs (which is in Java) to NodeJs w/ Typescript.
+
 ![sortalgs](https://github.com/lasellers/sort-algs-nodejs/blob/master/sortalgs.png)
 
 
