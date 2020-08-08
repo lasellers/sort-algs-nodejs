@@ -1,31 +1,27 @@
+//  tsc BubbleSort.ts && nodejs BubbleSort.js
+class BubbleSort extends BaseSort{
 
+    sort = (arr: Array<number>): void => {
+        this.swaps = 0;
 
+        const end: number = arr.length - 1;
 
-/*
-package com.intrafoundation;
-
-import java.util.Arrays;
-
-public class BubbleSort extends BaseSort {
-    public void sort(int[] arr) {
-        swaps = 0;
-        final int end = arr.length - 1;
-
-        boolean swapped;
+        let swapped: boolean;
         do {
             swapped = false;
-            for (int inner = 0; inner < end; inner++) {
-                final int a = arr[inner];
-                final int b = arr[inner + 1];
+            for (let inner: number = 0; inner < end; inner++) {
+                const a = arr[inner];
+                const b = arr[inner + 1];
                 if (a > b) {
                     arr[inner] = b;
                     arr[inner + 1] = a;
-                    swaps++;
+                    this.swaps++;
                     swapped = true;
                 }
             }
         } while (swapped);
     }
-}
 
- */
+}
+module.exports.BubbleSort = BubbleSort;
+//console.log(module);

@@ -11,7 +11,7 @@ var options = {
   storeScreenshots: true,
   screenshotsDirectory: './reports/e2e-screenshots/',
   metadata: {
-    "App Version": "3.0.8",
+    "App Version": "1.0.0",
     "Test Environment": "DEV",
     "Browser": "Chrome 54.0.2840.98",
     "Platform": "Ubuntu 20",

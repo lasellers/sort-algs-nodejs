@@ -96,3 +96,7 @@ typings/
 .idea/sort-algs-node-js.iml
 .idea/vcs.xml
 reports/
+
+cypress/videos/
+cypress/screenshots/
+*.mp4
