@@ -1,6 +1,6 @@
 # Sort Algs Node Js
 
-![sort-algs-node-js](https://github.com/lasellers/sort-algs-node-js/blob/master/sort-algs-node-js.png)
+![sort-algs-node-js](https://github.com/lasellers/sort-algs-node-js/blob/master/sortalgsnodejs.png)
 
 
 ## Installation
