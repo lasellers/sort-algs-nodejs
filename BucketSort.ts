@@ -8,11 +8,16 @@ export class BucketSort extends BaseSort {
 
         const len: number = arr.length;
 
-        let maxV: number = 0;
+        /* let maxV: number = 0;
         for (let index: number = 0; index < len; index++) {
             let a: number = arr[index];
             if (a > maxV) maxV = a;
-        }
+        } */
+        let maxV = arr.reduce(
+            (accumulator: number, currentValue: number) => {
+                return (accumulator < currentValue) ? accumulator : currentValue;
+            }
+            , 0);
 
         let bucket: Array<number> = [];
         for (let index: number = 0; index < len; index++) {
@@ -33,5 +38,6 @@ export class BucketSort extends BaseSort {
     }
 
 }
+
 //module.exports.BucketSort = BucketSort;
 //console.log(module);
