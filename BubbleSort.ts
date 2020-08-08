@@ -1,7 +1,6 @@
-//  tsc BubbleSort.ts && nodejs BubbleSort.js
-// @ts-ignore
-const BaseSort = require('./BaseSort.ts');
-class BubbleSort extends BaseSort{
+// tsc BubbleSort.ts && nodejs BubbleSort.js
+import {BaseSort} from "./BaseSort";
+export class BubbleSort extends BaseSort{
 
     sort = (arr: Array<number>): void => {
         this.swaps = 0;
@@ -25,5 +24,5 @@ class BubbleSort extends BaseSort{
     }
 
 }
-module.exports.BubbleSort = BubbleSort;
+//module.exports.BubbleSort = BubbleSort;
 //console.log(module);

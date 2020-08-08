@@ -1,14 +1,16 @@
 "use strict";
 
+import {SortData} from "./SortData";
+import {InsertionSort} from "./InsertionSort";
+
+let sortData = new SortData();
+let insertionSort = new InsertionSort();
+
 // @ts-ignore
 const chai = require('chai');
 // @ts-ignore
 var expect = require('chai').expect;
 chai.use(require('chai-arrays'));
-
-// @ts-ignore
-let sortData = new (require('./SortData.ts').SortData)();
-let insertionSort = new (require('./InsertionSort.ts').InsertionSort)();
 
 test('swaps', () => {
     let swap = insertionSort.swaps;

@@ -1,8 +1,5 @@
-class SortData {
-    swap: boolean;
-
-    constructor(swap: boolean) {
-        this.swap = swap;
+export class SortData {
+    constructor() {
     }
 
     getSortDataInt0 = (): Array<number> => {
@@ -39,5 +36,4 @@ class SortData {
     };
 
 }
-
-module.exports.SortData = SortData;
+// module.exports.SortData = SortData;

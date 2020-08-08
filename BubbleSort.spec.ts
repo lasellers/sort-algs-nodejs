@@ -1,5 +1,11 @@
 "use strict";
 
+import {SortData} from "./SortData";
+import {BubbleSort} from "./BubbleSort";
+
+let sortData = new SortData();
+let bubbleSort = new BubbleSort();
+
 // @ts-ignore
 const chai = require('chai');
 // @ts-ignore
@@ -7,8 +13,10 @@ var expect = require('chai').expect;
 chai.use(require('chai-arrays'));
 
 // @ts-ignore
-let sortData = new (require('./SortData.ts').SortData)();
-let bubbleSort = new (require('./BubbleSort.ts').BubbleSort)();
+//let sortData = new (require('./SortData.ts').default)();
+//let bubbleSort = new (require('./BubbleSort.ts').default)();
+//let sortData = require('./SortData.ts');
+//let bubbleSort = require('./BubbleSort.ts');
 
 test('swaps', () => {
     let swap = bubbleSort.swaps;

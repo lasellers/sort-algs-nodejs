@@ -1,8 +1,6 @@
 //  tsc InsertionSort.ts && nodejs InsertionSort.js
-// @ts-ignore
-const BaseSort = require('./BaseSort.ts');
-
-class InsertionSort extends BaseSort {
+import {BaseSort} from "./BaseSort";
+export class InsertionSort extends BaseSort {
 
     sort = (arr: Array<number>): void => {
         this.swaps = 0;
@@ -27,6 +25,5 @@ class InsertionSort extends BaseSort {
     }
 
 }
-
-module.exports.InsertionSort = InsertionSort;
+//module.exports.InsertionSort = InsertionSort;
 //console.log(module);

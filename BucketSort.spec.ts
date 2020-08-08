@@ -1,14 +1,16 @@
 "use strict";
 
+import {SortData} from "./SortData";
+import {BucketSort} from "./BucketSort";
+
+let sortData = new SortData();
+let bucketSort = new BucketSort();
+
 // @ts-ignore
 const chai = require('chai');
 // @ts-ignore
 var expect = require('chai').expect;
 chai.use(require('chai-arrays'));
-
-// @ts-ignore
-let sortData = new (require('./SortData.ts').SortData)();
-let bucketSort = new (require('./BucketSort.ts').BucketSort)();
 
 test('swaps', () => {
     let swap = bucketSort.swaps;

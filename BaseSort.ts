@@ -1,5 +1,6 @@
 //  tsc BaseSort.ts && nodejs BaseSort.js
-class BaseSort {
+// @ts-ignore
+export class BaseSort {
     swaps: number;
 
     constructor() {
@@ -26,5 +27,5 @@ class BaseSort {
     };
 
 }
-module.exports.BaseSort = BaseSort;
+// module.exports.BaseSort = BaseSort;
 //console.log(module);
