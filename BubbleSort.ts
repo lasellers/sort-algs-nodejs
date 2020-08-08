@@ -1,4 +1,6 @@
 //  tsc BubbleSort.ts && nodejs BubbleSort.js
+// @ts-ignore
+const BaseSort = require('./BaseSort.ts');
 class BubbleSort extends BaseSort{
 
     sort = (arr: Array<number>): void => {
