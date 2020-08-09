@@ -25,6 +25,14 @@ test('getSwaps', () => {
     expect(swap).to.be.equal(0);
 });
 
+test('sort 0 element array', () => {
+    let arr = sortData.getSortDataInt0();
+    let arrSorted = sortData.getSortDataInt0Sorted();
+    baseSort.sort(arr);
+    expect(arr).to.be.array();
+    expect(arr).to.be.equalTo(arrSorted);
+});
+
 test('sort 4 element array', () => {
     let arr = sortData.getSortDataInt4();
     let arrSorted = sortData.getSortDataInt4Sorted();

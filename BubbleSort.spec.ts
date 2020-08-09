@@ -12,15 +12,17 @@ const chai = require('chai');
 var expect = require('chai').expect;
 chai.use(require('chai-arrays'));
 
-// @ts-ignore
-//let sortData = new (require('./SortData.ts').default)();
-//let bubbleSort = new (require('./BubbleSort.ts').default)();
-//let sortData = require('./SortData.ts');
-//let bubbleSort = require('./BubbleSort.ts');
-
 test('swaps', () => {
     let swap = bubbleSort.swaps;
     expect(swap).to.be.equal(0);
+});
+
+test('sort 0 element array', () => {
+    let arr = sortData.getSortDataInt0();
+    let arrSorted = sortData.getSortDataInt0Sorted();
+    bubbleSort.sort(arr);
+    expect(arr).to.be.array();
+    expect(arr).to.be.equalTo(arrSorted);
 });
 
 test('getSwaps', () => {
