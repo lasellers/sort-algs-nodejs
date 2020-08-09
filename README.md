@@ -2,7 +2,7 @@
 
 Port of SortAlgs (which is in Java) to NodeJs w/ Typescript.
 
-![sortalgs](https://github.com/lasellers/sort-algs-nodejs/blob/master/sortalgs.png)
+![sortalgs](https://github.com/lasellers/sort-algs-nodejs/blob/master/sortalgs2.png)
 
 
 ## Running
