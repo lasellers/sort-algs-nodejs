@@ -1,38 +1,35 @@
+//  tsc QuickSort.ts && nodejs QuickSort.js
+import {BaseSort} from "./BaseSort";
 
-/*
-package com.intrafoundation;
+export class QuickSort extends BaseSort {
 
-public class QuickSort extends BaseSort {
-
-    public void sort(int[] arr) {
-        swaps = 0;
-        quickSort(arr, 0, arr.length - 1);
+    sort = (arr: Array<number>): void => {
+        this.swaps = 0;
+        this.quickSort(arr, 0, arr.length - 1);
     }
 
-    public void quickSort(int[] arr, final int begin, final int end) {
+    quickSort = (arr: Array<number>, begin: number, end: number) => {
         if (begin < end) {
-            final int partitionIndex = partition(arr, begin, end);
+            const partitionIndex: number = this.partition(arr, begin, end);
 
-            quickSort(arr, begin, partitionIndex - 1);
-            quickSort(arr, partitionIndex + 1, end);
+            this.quickSort(arr, begin, partitionIndex - 1);
+            this.quickSort(arr, partitionIndex + 1, end);
         }
     }
 
-    private int partition(int[] arr, final int begin, final int end) {
-        final int pivot = arr[end];
-        int slidingIndex = (begin - 1);
+    partition = (arr: Array<number>, begin: number, end: number): number => {
+        const pivot = arr[end];
+        let slidingIndex = (begin - 1);
 
-        for (int loopIndex = begin; loopIndex < end; loopIndex++) {
+        for (let loopIndex: number = begin; loopIndex < end; loopIndex++) {
             if (arr[loopIndex] <= pivot) {
-                swap(arr, ++slidingIndex, loopIndex);
+                this.swap(arr, ++slidingIndex, loopIndex);
             }
         }
 
-        swap(arr, ++slidingIndex, end);
+        this.swap(arr, ++slidingIndex, end);
 
         return slidingIndex;
     }
 
 }
-
- */
